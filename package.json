@@ -1,0 +1,34 @@
+{
+  "name": "mern",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start":"node app.js",
+    "app":"nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steinkchristensen/eddm.git"
+  },
+  "keywords": [
+    "eddm"
+  ],
+  "author": "Stein",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/steinkchristensen/eddm/issues"
+  },
+  "homepage": "https://github.com/steinkchristensen/eddm#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.2",
+    "validation": "^0.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
