@@ -38,11 +38,16 @@ class ShowBookDetails extends Component {
                             <Link to="/create-book" className="btn btn-outline-warning float-left">
                                 Add Book
                             </Link>
+                            <Link to={'/edit-book/'+this.props.match.params.id} className="btn btn-outline-warning float-right">
+                                Edit Book
+                            </Link>
                         </div>
                         <div className="col-md-8 m-auto">
                             <h1 className="display-4 text-center">{this.state.book.title}</h1>
-                            <div className='form-group'>
-                            </div>
+                            <p className=''>{this.state.book.title}</p>
+                            <p className=''>{this.state.book.isbn}</p>
+                            <p className=''>{this.state.book.author}</p>
+                            <p className=''>{this.state.book.description}</p>
                         </div>
                     </div>
                 </div>
