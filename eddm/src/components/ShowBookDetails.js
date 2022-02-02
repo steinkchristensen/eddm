@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { Link, Router, Route, browserHistory, useParams } from 'react-router-dom';
 import '../App.css';
 import axios from 'axios';
 import BookCard from './BookCard.js';
+
 
 class ShowBookDetails extends Component {
     constructor(props) {
@@ -39,7 +40,7 @@ class ShowBookDetails extends Component {
                             </Link>
                         </div>
                         <div className="col-md-8 m-auto">
-                            <h1 className="display-4 text-center">{}</h1>
+                            <h1 className="display-4 text-center">{this.state.book.title}</h1>
                             <div className='form-group'>
                             </div>
                         </div>
